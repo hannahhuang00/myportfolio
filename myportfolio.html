@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html>
-<!--Heading-->
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<!--Heading-->
   <title>Hannah Huang</title>
 <!--Javascript fullpage.js-->
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="jquery.fullPage.js"></script>
+<!--Script for fullpage.js-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          bigSectionsDestination: top,
+          controlArrows: false,
+          });});
+    </script>
 <!--Linking CSS-->
   <link rel = "stylesheet"
   type = "text/css"
   href = "myportfolio.css"/>
+<!--Import Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<!--Text-->
   <body>
-    hi
+    <div id="fullpage">
+<!--Page 1-->
+    	<div class="section">
+        <img class="fullvh" src=foggyforest.jpg>
+        <div class="overlay-desc">
+          <div class="bottomright">
+            <h1>hannah</h1>
+            <h1>huang</h1>
+          </div>
+         </div>
+      </div>
+    	<div class="section">Some section</div>
+    	<div class="section">Some section</div>
+    	<div class="section">Some section</div>
+    </div>
   </body>
 </html>
