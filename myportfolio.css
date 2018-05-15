@@ -2,6 +2,9 @@
   height: 100vh;
 }
 
+.fullvw {
+  width: 100vw;
+}
 .overlay-desc {
   background: rgba(0,0,0,0);
   position: absolute;
@@ -9,19 +12,30 @@
   display: block;
   align-items: center;
   justify-content: center;
-  top: 2vh;
 }
 
-.bottomright {
-  position: fixed;
-  bottom: 5vh;
-  right: 5vw;
+.center {
+  text-align: center;
 }
 
 h1 {
   font-family: 'Poiret One', cursive;
-  color: white;
-  font-size: 18vh;
+  color: #23232B;
+  font-size: 15vh;
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 15vh;
+}
+
+.circle {
+  height: 58vh;
+  width: 58vh;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  top: 12vh;
+  border: 2vw solid #3E94A8;
+  box-shadow: 0 0 0 3vw #23232B;
+
 }
